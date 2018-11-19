@@ -1,6 +1,6 @@
 # Welcome to GitHub Pages for Project AutoBike MDH
 
-### Project AutoBike is the development of an autonomous bicycle-robot platform for the validation of traffic safety systems. The project started the autumn semester 2018 at M&Auml;lardalen University.
+### Project AutoBike is the development of an autonomous bicycle-robot platform for the validation of traffic safety systems. The project started the autumn semester 2018 at M&auml;lardalen University.
 
 ### The intention of this website is to document our work and current status on the project.
 
