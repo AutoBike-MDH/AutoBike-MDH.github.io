@@ -1,1 +1,1 @@
-![AutoBike-MDH](../Images/Block Diagram v_2.png)
+![AutoBike-MDH](../Images/Block_Diagram_v_2.png)
