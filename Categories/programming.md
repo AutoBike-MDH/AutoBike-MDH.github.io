@@ -33,7 +33,7 @@ To acquire the roll and pitch values, the values from the accelerometer and gyro
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Roll_{new}=a(Gyro_X&plus;Roll_{old})&plus;(1-a)Roll_{acc}&space;\text{,\quad&space;where&space;}&space;a=0.94" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Roll_{new}=a(Gyro_X&plus;Roll_{old})&plus;(1-a)Roll_{acc}&space;\text{,\quad&space;where&space;}&space;a=0.94" title="Roll_{new}=a(Gyro_X+Roll_{old})+(1-a)Roll_{acc} \text{,\quad where } a=0.94" /></a>
 
-From the equation, one can see that the values from the gyroscope are integrated over time. If the value of \textit{a} is increased, more rapid changes are excluded from the accelerometer; however, more drifting from the gyroscope is included. The Roll_acc, which is the contribution from accelerometer to the roll angle is calculated using equation, and to calculate the pitch angle equation is used.
+From the equation, one can see that the values from the gyroscope are integrated over time. If the value of *a* is increased, more rapid changes are excluded from the accelerometer; however, more drifting from the gyroscope is included. The Roll<sub>acc</sub>, which is the contribution from accelerometer to the roll angle is calculated using equation, and to calculate the pitch angle equation is used.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Roll_{acc}=atan2(AccX,AccZ)\frac{180}{\pi}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Roll_{acc}=atan2(AccX,AccZ)\frac{180}{\pi}" title="Roll_{acc}=atan2(AccX,AccZ)\frac{180}{\pi}" /></a>
 
