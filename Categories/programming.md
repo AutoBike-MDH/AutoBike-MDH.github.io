@@ -22,4 +22,5 @@ The raw data from the IMU is transferred to the roboRIO with SPI communication. 
 
 To initialise the communication with the IMU, a number of registers and offsets are configured on the IMU from the roboRIO. The 16 bit raw data are computed to a gyroscope and accelerometer value using the equation below.
 
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=Value=\frac{(Rawdata-Bias)}{Sensitivity}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Value=\frac{(Rawdata-Bias)}{Sensitivity}" title="Value=\frac{(Rawdata-Bias)}{Sensitivity}" /></a>
