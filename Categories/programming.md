@@ -24,3 +24,8 @@ To initialise the communication with the IMU, a number of registers and offsets 
 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=Value=\frac{(Rawdata-Bias)}{Sensitivity}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Value=\frac{(Rawdata-Bias)}{Sensitivity}" title="Value=\frac{(Rawdata-Bias)}{Sensitivity}" /></a>
+
+
+The bias is calculated in the initialisation phase of the code, where 3000 readings from the gyroscope and accelerometer are averaged and a bias value is produced for each axis for both the accelerometer and gyroscope. When the bias is calculated it is important that the bicycle is in an upright position standing as still as possible. The sensitivity value is found in the MPU9250 data sheet, and are set using the  GYRO\_FS\_SEL and ACCEL\_FS\_SEL in register 27 and 28 respectively for the gyroscope and accelerometer. The gyroscope sensitivity is currently set to 16.4 and the accelerometer sensitivity is 2048.
+
+To acquire the roll and pitch values, the values from the accelerometer and gyroscope are merged and the rapid changes of the accelerometer and the slow changes from the gyroscope are neglected using a complementary filter. In the equation below an example of how the roll angle is calculated is shown; the procedure for the pitch angle is similar but with data from y-axis of the gyro and the pitch contribution from the accelerometer.
