@@ -1,6 +1,10 @@
-## Mechanical System
+# Mechanical System
 
 This page holds an overview of the design of the mechanical system for the bicycle. This includes mounts for electronic components, safety systems, as well as a brake system.
+
+## Steering Motor
+
+Used as a steering motor for the AutoBike is a Maxon DCX 32 L DC Motor. This is used together with a planetary gearhead GPX 32 HP and encoder HEDS 5540 A.
 
 ### Steering Motor Mount
 
